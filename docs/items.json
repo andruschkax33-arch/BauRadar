@@ -1,6 +1,6 @@
 {
   "generated_at": "25.10.2026, 14:30 Uhr",
-  "generated_iso": "2026-10-25T13:30:18.265670+00:00",
+  "generated_iso": "2026-10-25T13:30:44.009665+00:00",
   "region_labels": {
     "duesseldorf_dueren": "Düsseldorf/Düren",
     "nrw": "NRW",
@@ -8,34 +8,12 @@
   },
   "news": [
     {
-      "id": "a769c0c7ef13e4fd",
-      "type": "news",
-      "title": "Mit dem Bleistift am Gate - Zum 90. Geburtstag von Volkwin Marg",
-      "source": "BauNetz Aktuell",
-      "url": "https://www.baunetz.de/meldungen/Meldungen-Zum_90._Geburtstag_von_Volkwin_Marg_10441923.html?context=4093",
-      "published": "2026-10-15T12:30:36+00:00",
-      "region": "nrw",
-      "teaser": "15.10.2026 [[vollformatbild:1]]Eine Begegnung vor etwa zwölf Jahren bleibt besonders in Erinnerung. In München treffen wir uns zufällig beim Warten auf den Flug nach Bologna und kommen ins Gespräch über den Grund seiner Reise.",
-      "ai_summary": null
-    },
-    {
-      "id": "8d08fc184546e1fc",
-      "type": "news",
-      "title": "Neue Nachbarn in Stellingen - Wohnungsbau in Hamburg von Gerber Architekten",
-      "source": "BauNetz Aktuell",
-      "url": "https://www.baunetz.de/meldungen/Meldungen-Wohnungsbau_in_Hamburg_von_Gerber_Architekten_10439693.html?context=4093",
-      "published": "2026-10-12T13:17:05+00:00",
-      "region": "nrw",
-      "teaser": "12.10.2026 Wer in Hamburg eine bezahlbare Wohnung sucht, braucht weiterhin Geduld. Mit etwas Glück findet man jedoch etwas im nordwestlich der Innenstadt gelegenen Stellingen, wo derzeit auf ehemaligen Sport- und Schulflächen die Neue Mitte Stellingen mit …",
-      "ai_summary": null
-    },
-    {
       "id": "bedbd1943b8ca3f7",
       "type": "news",
       "title": "+++ Alle Architektur-Meldungen im BauNetz +++",
       "source": "BauNetz Aktuell",
       "url": "https://www.baunetz.de/meldungen/?context=4093",
-      "published": "2026-10-25T13:30:19.339247+00:00",
+      "published": "2026-10-25T13:30:45.083767+00:00",
       "region": "de",
       "teaser": "Aktuelle Meldungen zu Architektur und Architekten aus dem In- und Ausland - täglich recherchiert von der BauNetz-Redaktion +++ Termine, Wettbewerbe, Entscheidungen +++ BauNetz WOCHE - das PDF-Magazin für Architekten +++ Kostenloser täglicher …",
       "ai_summary": null
@@ -228,6 +206,17 @@
       "ai_summary": null
     },
     {
+      "id": "a769c0c7ef13e4fd",
+      "type": "news",
+      "title": "Mit dem Bleistift am Gate - Zum 90. Geburtstag von Volkwin Marg",
+      "source": "BauNetz Aktuell",
+      "url": "https://www.baunetz.de/meldungen/Meldungen-Zum_90._Geburtstag_von_Volkwin_Marg_10441923.html?context=4093",
+      "published": "2026-10-15T12:30:36+00:00",
+      "region": "de",
+      "teaser": "15.10.2026 [[vollformatbild:1]]Eine Begegnung vor etwa zwölf Jahren bleibt besonders in Erinnerung. In München treffen wir uns zufällig beim Warten auf den Flug nach Bologna und kommen ins Gespräch über den Grund seiner Reise.",
+      "ai_summary": null
+    },
+    {
       "id": "8363ebbc0122ed20",
       "type": "news",
       "title": "Junggebliebene - BAUNETZWOCHE#698",
@@ -291,6 +280,17 @@
       "published": "2026-10-14T11:45:48+00:00",
       "region": "de",
       "teaser": "13.10.2026 Hoch die Hände, Wochenende!, rufen Kinder hierzulande gerne. Ob französische Grundschüler*innen Youpi, cest mercredi! reimen? Eher nicht.",
+      "ai_summary": null
+    },
+    {
+      "id": "8d08fc184546e1fc",
+      "type": "news",
+      "title": "Neue Nachbarn in Stellingen - Wohnungsbau in Hamburg von Gerber Architekten",
+      "source": "BauNetz Aktuell",
+      "url": "https://www.baunetz.de/meldungen/Meldungen-Wohnungsbau_in_Hamburg_von_Gerber_Architekten_10439693.html?context=4093",
+      "published": "2026-10-12T13:17:05+00:00",
+      "region": "de",
+      "teaser": "12.10.2026 Wer in Hamburg eine bezahlbare Wohnung sucht, braucht weiterhin Geduld. Mit etwas Glück findet man jedoch etwas im nordwestlich der Innenstadt gelegenen Stellingen, wo derzeit auf ehemaligen Sport- und Schulflächen die Neue Mitte Stellingen mit …",
       "ai_summary": null
     },
     {

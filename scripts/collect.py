@@ -177,6 +177,7 @@ def collect_news(cfg, kw, regions, errors, previous_ai):
             if published < cutoff:
                 continue
             item_id = make_id(e["link"])
+            short = teaser(e["summary"])
             items.append({
                 "id": item_id,
                 "type": "news",
@@ -184,8 +185,9 @@ def collect_news(cfg, kw, regions, errors, previous_ai):
                 "source": feed["name"],
                 "url": e["link"],
                 "published": published.isoformat(),
-                "region": detect_region(f"{e['title']} {strip_html(e['summary'])}", feed.get("region", "de"), regions),
-                "teaser": teaser(e["summary"]),
+                # Region nur aus Titel und sichtbarem Teaser, sonst erwähnen Meldungen Orte am Rand
+                "region": detect_region(f"{e['title']} {short}", feed.get("region", "de"), regions),
+                "teaser": short,
                 "ai_summary": previous_ai.get(item_id),
             })
     return items
