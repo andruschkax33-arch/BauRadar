@@ -184,7 +184,7 @@ def collect_news(cfg, kw, regions, errors, previous_ai):
                 "source": feed["name"],
                 "url": e["link"],
                 "published": published.isoformat(),
-                "region": detect_region(f"{e['title']} {e['summary']}", feed.get("region", "de"), regions),
+                "region": detect_region(f"{e['title']} {strip_html(e['summary'])}", feed.get("region", "de"), regions),
                 "teaser": teaser(e["summary"]),
                 "ai_summary": previous_ai.get(item_id),
             })
