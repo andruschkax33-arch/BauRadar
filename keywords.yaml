@@ -1,0 +1,93 @@
+# BauRadar – Stichwörter und Ausschlüsse
+#
+# Groß-/Kleinschreibung egal. Jeder Eintrag ist ein Wortanfang (z. B. "statik" findet
+# auch "Statik" und "statisch" nicht – dafür "statisch" extra eintragen).
+# Ändern auf GitHub: Datei öffnen → Stift-Symbol → Änderung → "Commit changes".
+
+# Nur für Feeds mit "filter: true" in sources.yaml: mindestens ein Begriff muss vorkommen.
+include:
+  - tragwerk
+  - statik
+  - statisch
+  - massivbau
+  - stahlbau
+  - holzbau
+  - brücke
+  - brückenbau
+  - bauwerksprüfung
+  - bauwerk
+  - ingenieurbau
+  - sanierung
+  - eurocode
+  - din en 1992
+  - din en 1993
+  - din en 1995
+  - din en 1996
+  - bauordnung
+  - bauo nrw
+  - hoai
+  - ingenieurkammer
+  - bauingenieur
+  - tiefbau
+  - hochbau
+  - ausschreibung
+  - vergabe
+  - bau
+  - baustelle
+  - bauwesen
+  - beton
+  - betonbau
+  - kalkstein
+
+# Meldungen mit einem dieser Begriffe fliegen raus (Nachrichten und Ausschreibungen).
+exclude:
+  - fußball
+  - bundesliga
+  - promi
+  - horoskop
+  - kriminal
+  - polizei
+  - unfall
+  - wetter
+  - baumarkt
+  - baumwolle
+  - bauer
+
+# Region-Erkennung: steht ein Begriff im Text, bekommt die Meldung dieses Label.
+# Reihenfolge: zuerst Düsseldorf/Düren, dann NRW, sonst die Standard-Region der Quelle.
+regions:
+  duesseldorf_dueren:
+    - düsseldorf
+    - duesseldorf
+    - düren
+    - kreis düren
+    - eschweiler
+    - jülich
+    - linnich
+    - kreuzau
+    - niederzier
+    - langerwehe
+    - heimbach
+    - nideggen
+    - hürtgenwald
+    - vettweiß
+    - titz
+    - inden
+    - merzenich
+    - aldenhoven
+    - nörvenich
+  nrw:
+    - nrw
+    - nordrhein-westfalen
+    - nordrhein westfalen
+    - bauo nrw
+    - köln
+    - aachen
+    - dortmund
+    - bonn
+    - münster
+    - bielefeld
+    - duisburg
+    - wuppertal
+    - bochum
+    - bergisch gladbach

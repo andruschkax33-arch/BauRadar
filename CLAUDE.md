@@ -26,11 +26,11 @@ sind **kurz, auf Deutsch, mit genauen Menüpfaden**.
 - `scripts/collect.py` – Python-Sammeljob: Feeds/Ausschreibungen abrufen, filtern, Duplikate
   entfernen, bewerten, als JSON speichern. Optional KI-Kurzfassung über die Claude API (nur wenn
   das GitHub Secret `ANTHROPIC_API_KEY` gesetzt ist).
-- `data/items.json` – Ausgabe des Sammeljobs, wird von der App gelesen.
+- `docs/items.json` – Ausgabe des Sammeljobs. Liegt in `docs/`, damit GitHub Pages sie ausliefert.
 - `docs/` – statische PWA (`index.html`, `app.js`, `style.css`, `manifest.webmanifest`,
   `sw.js`, Icons). Wird über GitHub Pages veröffentlicht.
-- `.github/workflows/collect.yml` – täglich 6:00 deutscher Zeit (Cron) sowie manuell
-  (`workflow_dispatch`).
+- `.github/workflows/collect.yml` – täglich 6:00 deutscher Zeit (zwei UTC-Cron-Zeilen, Schritt
+  „gate“ lässt nur den 6-Uhr-Lauf durch) sowie manuell (`workflow_dispatch`).
 - `README.md` – Anleitung für Nutzerin/Nutzer: Quellen ändern, Stichwörter ändern, App auf dem
   Handy installieren.
 
@@ -52,4 +52,8 @@ sind **kurz, auf Deutsch, mit genauen Menüpfaden**.
 
 ## Status
 - Schritt 1 erledigt: Projektleitfaden angelegt.
-- Schritt 2: Plan (Architektur, Quellen, Ausschreibungs-Zugriff) – in Arbeit, wartet auf Freigabe.
+- Schritt 2: Plan freigegeben. Umgesetzt: `sources.yaml`, `keywords.yaml`, `scripts/collect.py`,
+  `docs/` (PWA), Workflow, `README.md`.
+- Ausschreibungen: TED-API (Option C) umgesetzt. Datenservice oeffentlichevergabe.de (Option A)
+  noch nicht geprüft.
+- Veröffentlichung: Entwicklungsbranch. GitHub Pages und der tägliche Cron wirken erst nach Merge auf `main`.
