@@ -1,0 +1,69 @@
+# BauRadar – Quellen
+#
+# Jede Quelle ist ein Eintrag unter "feeds" (Nachrichten) oder "tenders" (Ausschreibungen).
+# Ändern auf GitHub: Datei öffnen → Stift-Symbol (Bearbeiten) → Änderung → "Commit changes".
+#
+#   name:        Anzeigename der Quelle
+#   url:         Adresse des RSS- oder Atom-Feeds
+#   region:      Standard-Region: duesseldorf_dueren | nrw | de
+#                (wird überschrieben, wenn Düsseldorf/Düren bzw. NRW im Text vorkommt)
+#   enabled:     true = abrufen, false = pausiert
+#   filter:      true = nur Meldungen mit Stichwörtern aus keywords.yaml übernehmen
+#                (nötig bei allgemeinen Nachrichtenseiten)
+#
+# Nur Feeds eintragen, die wirklich Einträge liefern. Vor dem Eintragen testen.
+
+feeds:
+  - name: BauNetz Aktuell
+    url: https://www.baunetz.de/meldungen/rss.xml
+    region: de
+    enabled: true
+    filter: true
+
+  - name: DBZ Deutsche BauZeitschrift
+    url: https://www.dbz.de/rss.xml
+    region: de
+    enabled: true
+    filter: true
+
+  - name: ingenieur.de
+    url: https://www.ingenieur.de/feed/
+    region: de
+    enabled: true
+    filter: true
+
+  - name: RP Online
+    url: https://rp-online.de/feed.rss
+    region: nrw
+    enabled: true
+    filter: true
+
+  # Noch nicht gefunden bzw. nicht getestet (kein gültiger Feed):
+  # - name: Baumeister                (Feed existiert, ist aber leer)
+  # - name: Ingenieurkammer-Bau NRW   (ikbau.de – kein Feed gefunden)
+  # - name: Bauindustrie NRW          (kein Feed gefunden)
+  # - name: Stadt Düsseldorf Presse   (kein RSS gefunden)
+  # - name: Stadt Düren Presse        (kein RSS gefunden)
+  # - name: Kreis Düren Presse        (kein RSS gefunden)
+  # - name: Land NRW Presse           (kein RSS gefunden)
+
+# Ausschreibungen über die offizielle TED-API (EU-Bekanntmachungen).
+# Erfasst nur Aufträge oberhalb der EU-Schwellenwerte.
+tenders:
+  enabled: true
+  source_name: TED (EU-Bekanntmachungen)
+  country: DEU
+  cpv:
+    - "71327000"   # Ingenieurdienste für Bauwesen / Tragwerksplanung
+    - "71312000"   # Beratungsleistungen für Bauwesen
+  days_back: 30
+
+# KI-Kurzfassungen über die Claude API.
+# Wirkt nur, wenn zusätzlich das GitHub Secret ANTHROPIC_API_KEY gesetzt ist.
+ai_summary:
+  enabled: false
+  model: claude-haiku-5-5
+
+# Optionale Handy-Benachrichtigung über ntfy.sh (benötigt GitHub Secret NTFY_TOPIC).
+ntfy:
+  enabled: false

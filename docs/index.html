@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BauRadar</title>
+  <meta name="description" content="Bau- und Tragwerksplanungs-Nachrichten und Ausschreibungen für Düsseldorf, Düren, NRW und Deutschland">
+  <meta name="theme-color" content="#1f4e79">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="BauRadar">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>BauRadar</h1>
+    <button id="darkToggle" class="icon-btn" type="button" aria-label="Dark Mode umschalten">🌓</button>
+  </header>
+
+  <div class="stand" id="stand">Lade Daten …</div>
+
+  <nav class="tabs" id="tabs" aria-label="Bereiche">
+    <button type="button" data-tab="top" class="active">Top</button>
+    <button type="button" data-tab="duesseldorf_dueren">Region</button>
+    <button type="button" data-tab="nrw">NRW</button>
+    <button type="button" data-tab="de">Deutschland</button>
+    <button type="button" data-tab="tenders">Ausschreibungen</button>
+  </nav>
+
+  <div class="filters">
+    <input id="search" type="search" placeholder="Suchen …" aria-label="Suchen">
+    <label class="check"><input id="unreadOnly" type="checkbox"> nur ungelesen</label>
+    <label class="check"><input id="savedOnly" type="checkbox"> nur gemerkt</label>
+  </div>
+
+  <main id="feed" class="feed" aria-live="polite"></main>
+
+  <footer class="foot">
+    Kurzfassungen stammen aus den Feed-Teasern. Volltexte gibt es nur über den Link zum Original.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
